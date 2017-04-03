@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - latupo/circleci-base
+      - image: latupo/circleci-base
     working_directory: ~/build
     steps:
       - setup_remote_docker
