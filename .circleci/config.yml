@@ -2,7 +2,10 @@ version: 2
 
 jobs:
   build:
-    machine: true
+    docker:
+      - latupo/circleci-base
+    working_directory: ~/build
     steps:
+      - setup_remote_docker
       - run: docker build -t test .
       - run: docker run -it test /bin/true
