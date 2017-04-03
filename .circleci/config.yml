@@ -9,4 +9,4 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: docker build -t test .
-      - run: docker run -it test /bin/true
+      - run: docker run --rm test /bin/true
