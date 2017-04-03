@@ -15,4 +15,4 @@ USER limnoria
 VOLUME ["/var/limnoria"]
 WORKDIR /var/limnoria
 
-ENTRYPOINT ["/usr/local/bin/start.sh", "limnoria.conf"]
+ENTRYPOINT ["/usr/local/bin/start.sh"]
