@@ -9,7 +9,7 @@ This is a Dockerfile repository for [Limnoria](https://github.com/ProgVal/Limnor
 If you just want the image an automated build is [available](https://hub.docker.com/r/dpyro/docker-limnoria/) on the Docker Hub. You can simply run:
 
 ```shell
-docker run -v ~/limnoria:/var/limnoria --rm -it dpyro/docker-limnoria
+docker run -v ~/limnoria:/data --rm -it dpyro/docker-limnoria
 ```
 
 ## Build
@@ -23,10 +23,10 @@ docker build -t limnoria .
 ## Run
 
 ```shell
-docker run -v ~/limnoria:/var/limnoria --rm -it limnoria
+docker run -v ~/limnoria:/data --rm -it limnoria
 ```
 
-will run a ephemeral container from the `limnoria` image, mounting `~/limnoria` to the data volume located at `/var/limnoria` and connecting a tty.
+will run a ephemeral container from the `limnoria` image, mounting `~/limnoria` to the data volume located at `/data` and connecting a tty.
 
 ## Configuration
 
