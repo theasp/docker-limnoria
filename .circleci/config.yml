@@ -10,3 +10,4 @@ jobs:
       - setup_remote_docker
       - run: docker build -t test .
       - run: docker run --rm test /bin/true
+      - run: docker run --rm test supybot --version
