@@ -13,5 +13,5 @@ jobs:
       - run: test $(docker inspect --format='{{len .Config.Volumes}}' test) -ge 1
       - run: docker run --rm test /bin/true
       - run: docker run --rm test supybot --version
-      - run: docker run --rm test test "$(whoami)" != "root"
+      - run: docker run --rm test test '"$(whoami)" != "root"'
       - run: docker run --rm test touch boop
