@@ -12,7 +12,7 @@ RUN apk add --update git && \
     rm -rf /var/cache/apk/*
 
 COPY ["start.sh", "/usr/local/bin/"]
-RUN chmod u+x /usr/local/bin/start.sh
+RUN chmod 0755 /usr/local/bin/start.sh
 
 RUN adduser -S limnoria && \
     mkdir -p /data && \
